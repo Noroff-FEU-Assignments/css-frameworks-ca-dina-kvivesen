@@ -1,0 +1,9 @@
+body {
+  background-image: radial-gradient(circle at center, #FFFFFF, #E5E5E5);
+}
+.navbar-brand {
+  color: map-get($colours, pink) !important;
+}
+.navbar {
+  background-color: map-get($colours, light-gray);
+}
