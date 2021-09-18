@@ -1,9 +1,33 @@
 body {
-  background-image: radial-gradient(circle at center, #FFFFFF, #E5E5E5);
+  background-image: radial-gradient(circle at center, #ffffff, #e5e5e5);
 }
 .navbar-brand {
   color: map-get($colours, pink) !important;
 }
+h1, .accordion-button {
+  color: map-get($colours, pink) !important;
+}
 .navbar {
   background-color: map-get($colours, light-gray);
+}
+.navbar .active {
+  border-radius: 3px;
+  background: white;
+}
+.carousel-indicators button {
+  height: 30px !important;
+  width: 30px;
+  opacity: unset !important;
+  background-color: white;
+}
+.carousel-indicators .active,
+.btn-outline-success {
+  background-color: map-get($colours, pink) !important;
+}
+.btn-outline-success {
+  border: none !important;
+  color: white !important;
+}
+.accordion {
+  display: inline-flex;
 }

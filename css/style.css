@@ -1,15 +1,3 @@
-body {
-  background-image: radial-gradient(circle at center, #FFFFFF, #E5E5E5);
-}
-
-.navbar-brand {
-  color: #E92569 !important;
-}
-
-.navbar {
-  background-color: #EFEFEF;
-}
-
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11955,5 +11943,49 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+body {
+  background-image: radial-gradient(circle at center, #ffffff, #e5e5e5);
+}
+
+.navbar-brand {
+  color: #E92569 !important;
+}
+
+h1, .h1, .accordion-button {
+  color: #E92569 !important;
+}
+
+.navbar {
+  background-color: #EFEFEF;
+}
+
+.navbar .active {
+  border-radius: 3px;
+  background: white;
+}
+
+.carousel-indicators button {
+  height: 30px !important;
+  width: 30px;
+  opacity: unset !important;
+  background-color: white;
+}
+
+.carousel-indicators .active,
+.btn-outline-success {
+  background-color: #E92569 !important;
+}
+
+.btn-outline-success {
+  border: none !important;
+  color: white !important;
+}
+
+.accordion {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 /*# sourceMappingURL=style.css.map */
