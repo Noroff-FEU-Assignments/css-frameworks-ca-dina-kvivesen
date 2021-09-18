@@ -1,14 +1,27 @@
 body {
   background-image: radial-gradient(circle at center, #ffffff, #e5e5e5);
 }
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .navbar-brand {
   color: map-get($colours, pink) !important;
 }
-h1, .accordion-button {
+h1, .nav-tabs button, .accordion-header button {
   color: map-get($colours, pink) !important;
+}
+.block-container {
+  padding: 30px 0;
 }
 .navbar {
   background-color: map-get($colours, light-gray);
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  position: fixed !important;
+  width: 100%;
+  z-index: 100;
 }
 .navbar .active {
   border-radius: 3px;
@@ -24,10 +37,36 @@ h1, .accordion-button {
 .btn-outline-success {
   background-color: map-get($colours, pink) !important;
 }
+.carousel, .carousel img {
+  min-height: 300px;
+}
 .btn-outline-success {
   border: none !important;
   color: white !important;
 }
-.accordion {
-  display: inline-flex;
+.tab-content, .accordion-header button {
+  background-color: white !important;
 }
+.tab-content .active {
+  display: inline-flex !important;
+  flex: 1 auto;
+  padding: 2rem;
+}
+.tab-content__text {
+  padding: 2rem;
+}
+.tab-content__text a, .accordion-body a {
+  text-decoration: none;
+  color: black;
+}
+.accordion-body {
+  text-align: center;
+}
+.footer__container {
+  max-width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  color: map-get($colours, footerLinks) !important;
+}
+

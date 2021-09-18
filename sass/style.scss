@@ -1,4 +1,8 @@
-
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/contact";
+@import "partials/news";
+@import "partials/layout";
 
 // scss-docs-start import-stack
 // Configuration
@@ -46,6 +50,3 @@
 // Utilities
 @import "../bootstrap-scss/utilities/api";
 // scss-docs-end import-stack
-
-@import "partials/variables";
-@import "partials/layout";

@@ -1,3 +1,115 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+h1, .h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-image: radial-gradient(circle at center, #ffffff, #e5e5e5);
+}
+
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar-brand {
+  color: #E92569 !important;
+}
+
+h1, .h1, .nav-tabs button, .accordion-header button {
+  color: #E92569 !important;
+}
+
+.block-container {
+  padding: 30px 0;
+}
+
+.navbar {
+  background-color: #EFEFEF;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  position: fixed !important;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar .active {
+  border-radius: 3px;
+  background: white;
+}
+
+.carousel-indicators button {
+  height: 30px !important;
+  width: 30px;
+  opacity: unset !important;
+  background-color: white;
+}
+
+.carousel-indicators .active,
+.btn-outline-success {
+  background-color: #E92569 !important;
+}
+
+.carousel, .carousel img {
+  min-height: 300px;
+}
+
+.btn-outline-success {
+  border: none !important;
+  color: white !important;
+}
+
+.tab-content, .accordion-header button {
+  background-color: white !important;
+}
+
+.tab-content .active {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  padding: 2rem;
+}
+
+.tab-content__text {
+  padding: 2rem;
+}
+
+.tab-content__text a, .accordion-body a {
+  text-decoration: none;
+  color: black;
+}
+
+.accordion-body {
+  text-align: center;
+}
+
+.footer__container {
+  max-width: 90%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #767676 !important;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11943,49 +12055,5 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
-}
-
-body {
-  background-image: radial-gradient(circle at center, #ffffff, #e5e5e5);
-}
-
-.navbar-brand {
-  color: #E92569 !important;
-}
-
-h1, .h1, .accordion-button {
-  color: #E92569 !important;
-}
-
-.navbar {
-  background-color: #EFEFEF;
-}
-
-.navbar .active {
-  border-radius: 3px;
-  background: white;
-}
-
-.carousel-indicators button {
-  height: 30px !important;
-  width: 30px;
-  opacity: unset !important;
-  background-color: white;
-}
-
-.carousel-indicators .active,
-.btn-outline-success {
-  background-color: #E92569 !important;
-}
-
-.btn-outline-success {
-  border: none !important;
-  color: white !important;
-}
-
-.accordion {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 /*# sourceMappingURL=style.css.map */
