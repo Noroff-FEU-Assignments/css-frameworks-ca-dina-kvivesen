@@ -14,6 +14,87 @@ h1, .h1 {
   font-style: italic;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .container {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin-bottom: 3em;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  color: #767676;
+}
+
+.list-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.list_p {
+  padding-top: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+.list-group-item svg {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+main {
+  color: #767676;
+}
+
+.form-check-input {
+  background-color: #E92569;
+  border: #E92569;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.form-check-label {
+  padding-top: 5px;
+}
+
+.btn-contact {
+  background-color: #767676;
+  border: none;
+  width: 100%;
+  height: 3rem;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 body {
   background-image: radial-gradient(circle at center, #ffffff, #e5e5e5);
 }
@@ -21,18 +102,22 @@ body {
 main {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
-.navbar-brand {
+.navbar-brand, h1, .h1 {
   color: #E92569 !important;
 }
 
-h1, .h1, .nav-tabs button, .accordion-header button {
+.nav-tabs button,
+.accordion-header button {
+  padding: 20px 20px;
   color: #E92569 !important;
 }
 
-.block-container {
-  padding: 30px 0;
+.intro-container {
+  padding: 0;
 }
 
 .navbar {
@@ -62,7 +147,8 @@ h1, .h1, .nav-tabs button, .accordion-header button {
   background-color: #E92569 !important;
 }
 
-.carousel, .carousel img {
+.carousel,
+.carousel img {
   min-height: 300px;
 }
 
@@ -71,7 +157,8 @@ h1, .h1, .nav-tabs button, .accordion-header button {
   color: white !important;
 }
 
-.tab-content, .accordion-header button {
+.tab-content,
+.accordion-header button {
   background-color: white !important;
 }
 
@@ -89,7 +176,8 @@ h1, .h1, .nav-tabs button, .accordion-header button {
   padding: 2rem;
 }
 
-.tab-content__text a, .accordion-body a {
+.tab-content__text a,
+.accordion-body a {
   text-decoration: none;
   color: black;
 }
@@ -99,7 +187,7 @@ h1, .h1, .nav-tabs button, .accordion-header button {
 }
 
 .footer__container {
-  max-width: 90%;
+  width: 90%;
   margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,6 +196,85 @@ h1, .h1, .nav-tabs button, .accordion-header button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #767676 !important;
+}
+
+footer {
+  background-color: white;
+}
+
+.navbar-toggler {
+  border: none !important;
+  border-color: transparent;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+  color: black;
+  font-size: larger;
+}
+
+.page-item.active .page-link {
+  background-color: #E92569;
+  border-color: #E92569;
+  color: white !important;
+}
+
+.page-link {
+  color: #E92569;
+}
+
+.container {
+  margin: 0;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 0;
+  }
+}
+
+.btn-primary {
+  background: -webkit-gradient(linear, left top, right top, color-stop(85%, #E92569), color-stop(15%, #767676));
+  background: linear-gradient(90deg, #E92569 85%, #767676 15%);
+  border: #E92569;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.card {
+  padding-left: 0;
+  padding-right: 0;
+  width: 264px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem auto;
+    margin-left: 0;
+    margin-right: 0;
+    width: 342px;
+  }
+}
+
+.col-lg {
+  border-radius: 15px;
+}
+
+.row {
+  gap: 10px;
+}
+
+.pagination {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.news-header {
+  padding-top: 2rem;
 }
 
 :root {

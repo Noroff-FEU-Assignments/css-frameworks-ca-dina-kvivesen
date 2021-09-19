@@ -3,46 +3,62 @@
   border-color: #E92569;
   color: white !important;
 }
+
 .page-link {
   color: #E92569;
 }
+
 .container {
   margin: 0;
   margin-right: 0;
-  @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
     padding-right: 0;
   }
 }
+
 .btn-primary {
-  background: linear-gradient( 90deg,#E92569 85%, #767676 15%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(85%, #E92569), color-stop(15%, #767676));
+  background: linear-gradient(90deg, #E92569 85%, #767676 15%);
   border: #E92569;
   text-transform: uppercase;
   width: 100%;
-  
 }
+
 .card {
   padding-left: 0;
   padding-right: 0;
   width: 264px;
-  @media only screen and (max-width: 768px) {
-    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 1rem auto;
     margin-left: 0;
     margin-right: 0;
     width: 342px;
   }
 }
+
 .col-lg {
   border-radius: 15px;
 }
+
 .row {
   gap: 10px;
-    
 }
+
 .pagination {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .news-header {
   padding-top: 2rem;
 }
+/*# sourceMappingURL=news.css.map */

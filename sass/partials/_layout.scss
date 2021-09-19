@@ -4,15 +4,20 @@ body {
 main {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
-.navbar-brand {
+.navbar-brand,
+h1 {
   color: map-get($colours, pink) !important;
 }
-h1, .nav-tabs button, .accordion-header button {
+.nav-tabs button,
+.accordion-header button {
+  padding: 20px 20px;
   color: map-get($colours, pink) !important;
 }
-.block-container {
-  padding: 30px 0;
+.intro-container {
+  padding: 0;
 }
 .navbar {
   background-color: map-get($colours, light-gray);
@@ -37,14 +42,16 @@ h1, .nav-tabs button, .accordion-header button {
 .btn-outline-success {
   background-color: map-get($colours, pink) !important;
 }
-.carousel, .carousel img {
+.carousel,
+.carousel img {
   min-height: 300px;
 }
 .btn-outline-success {
   border: none !important;
   color: white !important;
 }
-.tab-content, .accordion-header button {
+.tab-content,
+.accordion-header button {
   background-color: white !important;
 }
 .tab-content .active {
@@ -55,7 +62,8 @@ h1, .nav-tabs button, .accordion-header button {
 .tab-content__text {
   padding: 2rem;
 }
-.tab-content__text a, .accordion-body a {
+.tab-content__text a,
+.accordion-body a {
   text-decoration: none;
   color: black;
 }
@@ -63,10 +71,21 @@ h1, .nav-tabs button, .accordion-header button {
   text-align: center;
 }
 .footer__container {
-  max-width: 90%;
+  width: 90%;
   margin: 10px auto;
   display: flex;
   justify-content: space-between;
   color: map-get($colours, footerLinks) !important;
 }
-
+footer {
+  background-color: white;
+}
+.navbar-toggler {
+  border: none !important;
+  border-color: transparent;
+}
+.fa-facebook-f,
+.fa-twitter {
+  color: black;
+  font-size: larger;
+}
