@@ -106,14 +106,16 @@ main {
   padding-bottom: 30px;
 }
 
-.navbar-brand, h1, .h1 {
-  color: #E92569 !important;
+nav .container-fluid .navbar-brand, nav .container-sm .navbar-brand, nav .container-md .navbar-brand, nav .container-lg .navbar-brand, nav .container-xl .navbar-brand, nav .container-xxl .navbar-brand,
+main .intro-container h1,
+main .intro-container .h1 {
+  color: #E92569;
 }
 
 .nav-tabs button,
-.accordion-header button {
+.accordion .accordion-item .accordion-header button {
   padding: 20px 20px;
-  color: #E92569 !important;
+  color: #E92569;
 }
 
 .intro-container {
@@ -135,16 +137,16 @@ main {
   background: white;
 }
 
-.carousel-indicators button {
-  height: 30px !important;
+header .slide .carousel-indicators button {
+  height: 30px;
   width: 30px;
-  opacity: unset !important;
+  opacity: unset;
   background-color: white;
 }
 
-.carousel-indicators .active,
-.btn-outline-success {
-  background-color: #E92569 !important;
+header .slide .carousel-indicators .active,
+.d-flex .btn-outline-success {
+  background-color: #E92569;
 }
 
 .carousel,
@@ -152,14 +154,14 @@ main {
   min-height: 300px;
 }
 
-.btn-outline-success {
-  border: none !important;
-  color: white !important;
+.d-flex .btn-outline-success {
+  border: none;
+  color: white;
 }
 
 .tab-content,
-.accordion-header button {
-  background-color: white !important;
+.accordion .accordion-item .accordion-header button {
+  background-color: white;
 }
 
 .tab-content .active {
@@ -186,7 +188,7 @@ main {
   text-align: center;
 }
 
-.footer__container {
+.footer-container {
   width: 90%;
   margin: 10px auto;
   display: -webkit-box;
@@ -196,6 +198,28 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #767676 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-container .footer-container__icons {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+  }
+  .footer-container .footer-container__end {
+    position: absolute;
+    right: 5%;
+  }
 }
 
 footer {

@@ -7,14 +7,14 @@ main {
   padding-top: 60px;
   padding-bottom: 30px;
 }
-.navbar-brand,
-h1 {
-  color: map-get($colours, pink) !important;
+nav .container-fluid .navbar-brand,
+main .intro-container h1 {
+  color: map-get($colours, pink);
 }
 .nav-tabs button,
-.accordion-header button {
+.accordion .accordion-item .accordion-header button {
   padding: 20px 20px;
-  color: map-get($colours, pink) !important;
+  color: map-get($colours, pink);
 }
 .intro-container {
   padding: 0;
@@ -32,27 +32,27 @@ h1 {
   border-radius: 3px;
   background: white;
 }
-.carousel-indicators button {
-  height: 30px !important;
+header .slide .carousel-indicators button {
+  height: 30px;
   width: 30px;
-  opacity: unset !important;
+  opacity: unset;
   background-color: white;
 }
-.carousel-indicators .active,
-.btn-outline-success {
-  background-color: map-get($colours, pink) !important;
+header .slide .carousel-indicators .active,
+.d-flex .btn-outline-success {
+  background-color: map-get($colours, pink);
 }
 .carousel,
 .carousel img {
   min-height: 300px;
 }
-.btn-outline-success {
-  border: none !important;
-  color: white !important;
+.d-flex .btn-outline-success {
+  border: none;
+  color: white;
 }
 .tab-content,
-.accordion-header button {
-  background-color: white !important;
+.accordion .accordion-item .accordion-header button {
+  background-color: white;
 }
 .tab-content .active {
   display: inline-flex !important;
@@ -70,12 +70,28 @@ h1 {
 .accordion-body {
   text-align: center;
 }
-.footer__container {
+.footer-container {
   width: 90%;
   margin: 10px auto;
   display: flex;
   justify-content: space-between;
   color: map-get($colours, footerLinks) !important;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .footer-container__icons {
+      display: block;
+      text-align: center;
+      font-size: 25px;
+    }
+    .footer-container__end {
+      position: absolute;
+      right: 5%;
+    }
+  }
 }
 footer {
   background-color: white;
