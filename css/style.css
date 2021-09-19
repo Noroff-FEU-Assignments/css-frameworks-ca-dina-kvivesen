@@ -297,8 +297,9 @@ footer {
   padding-bottom: 30px;
 }
 
-.news-header {
+.pink-header {
   padding-top: 2rem;
+  color: #E92569;
 }
 
 :root {
